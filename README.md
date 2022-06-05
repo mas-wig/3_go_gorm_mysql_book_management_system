@@ -1,3 +1,3 @@
 # Structure Project
 
-![](asset/img/structure.png)
+![](asset/img/book_store.png)
