@@ -4,6 +4,12 @@
 
 ---
 
+# Running
+
+`./bookstore`
+
+---
+
 # Package
 
 - `github.com/gorilla/mux`
