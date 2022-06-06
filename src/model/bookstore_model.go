@@ -8,19 +8,19 @@ import (
 var db *gorm.DB = config.Connection()
 
 type Book struct {
-	gorm.Model
-	Author    string `gorm:"" json:"author"`
-	Country   string `json:"country"`
-	ImageLink string `json:"imageLink"`
-	Language  string `json:"language"`
-	Link      string `json:"link"`
-	Title     string `json:"title"`
-	Year      int64  `gorm:"type:int(10)" json:"year"`
-	Pages     int64  `gorm:"type:int(10)"`
+	gorm.Model        // membuat model untuk field table
+	Author     string `gorm:"" json:"author"`
+	Country    string `json:"country"`
+	ImageLink  string `json:"imageLink"` // akan dibikin di table jadi image_link
+	Language   string `json:"language"`
+	Link       string `json:"link"`
+	Title      string `json:"title"`
+	Year       int64  `gorm:"type:int(10)"`
+	Pages      int64  `gorm:"type:int(10)"`
 }
 
 func init() {
-	db.AutoMigrate(&Book{})
+	db.AutoMigrate(&Book{}) // jika data dihapus di dalam table row tidak akan hilang tapi dalam fiedl detele_at akan terisi current time yang kita lakukan delete begitu pula update
 }
 
 func (b *Book) CreateBook() *Book {
