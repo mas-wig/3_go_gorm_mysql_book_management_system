@@ -4,11 +4,11 @@
 
 ---
 
-# Package Install
+# Package
 
-- `go get github.com/gorilla/mux`
-- `go get github.com/jinzhu/gorm`
-- `go get github.com/jinzhu/gorm/dialects/mysql`
+- `github.com/gorilla/mux`
+- `github.com/jinzhu/gorm`
+- `github.com/jinzhu/gorm/dialects/mysql`
 
 ---
 
