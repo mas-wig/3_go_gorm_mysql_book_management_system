@@ -2,15 +2,21 @@
 
 ![](src/asset/img/book_store.png)
 
+---
+
 # Package Install
 
 - `go get github.com/gorilla/mux`
 - `go get github.com/jinzhu/gorm`
 - `go get github.com/jinzhu/gorm/dialects/mysql`
 
+---
+
 # MySql Database
 
 - `CREATE DATABASE bookstore`
+
+---
 
 # Postman
 
